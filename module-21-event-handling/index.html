@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    <button onclick="getClick()">click me</button>
+    <button type="submit" id="submit">submit</button>
+    <p id="text">ini text</p>
+
+    <script>
+        //function getClick () {
+        //    alert('Kocak kocak wir')
+        //}
+        //const button = document.getElementById('submit')
+        //button.addEventListener('click', () => {
+        //    alert('submit cuy')
+        //})
+
+        //button.addEventListener('mouseout', () => {
+        //    alert ('ni mouseout wok')
+        //})
+        const text = document.getElementById('text')
+        function getClick() {
+            text.style.color = 'red'
+        }
+
+        text.addEventListener('mouseover', () => {
+            text.style.backgroundColor = 'blue'
+        })
+    </script>
+</body>
+</html>

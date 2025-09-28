@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Access</title>
+</head>
+<body>
+    <h1 id="title">Ini Title</h1>
+    <p class="text">Ini sub title</p>
+    <ul>
+        <li class="text">Ini adalah list 1</li>
+        <li class="text">Ini adalah list 2</li>
+        <li>Ini adalah list 3</li>    
+    </ul>
+
+
+    <script>
+        //id itu uniq
+        // getElementbyId
+        console.log(document.getElementById('title'))
+        // getElementbyClassName
+        console.log(document.getElementsByClassName('text'))
+        // getElementbyTagName
+        const li = document.getElementsByTagName('li')
+        console.log(li)
+        //querySelector
+        const liText = document.querySelector('li.text')
+        console.log(liText)
+        // querySelectorAll
+        const liAll = document.querySelectorAll('li')
+        console.log(liAll)
+    </script>
+</body>
+</html>

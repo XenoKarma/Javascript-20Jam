@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial-Javascript</title>
+</head>
+<body>
+    <h1 id="title">Tutorial-Javascript</h1>
+    <p class="text"">Ini Paragraf</p>
+    <ul>
+        <li class="text">Item 1</li>
+        <li id="text-2">Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <script>
+        const title = document.getElementById('title')
+        console.log(title)
+        const text = document.getElementsByClassName("text")
+        console.log(text)
+        const el = document.getElementsByTagName('li')
+        console.log(el[1])
+        const element = document.querySelectorAll('li#text-2')
+        console.log(element)
+   
+    </script>
+</body>
+</html>

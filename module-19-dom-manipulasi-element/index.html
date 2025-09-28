@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial-Javascript</title>
+    <style>
+        .bg-red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Ini Title</h1>
+        <p>Ini Text</p>
+    </div>
+    <p id="paragraph">Ini Paragraph</p>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+
+    <script>
+        // mengubah konten
+        // 1.menggunakan element.textContent
+        // const paragraph = document.getElementById('paragraph')
+        //console.log(paragraph)
+        // paragraph.textContent = "ini adalah new paragraph"
+        // 2. element.innerHtml
+        // paragraph.innerHTML = 'Ini adalah inner HTML'
+        // perbedaannya adalah
+        // const container = document.getElementById('container')
+        // console.log(container)
+        // container.innerHTML = `<h1>ini berubah jadi content dengan tagname baru</h1>`
+        
+        // manipulasi attribute
+        const paragraph = document.getElementById('paragraph')
+        // console.log(paragraph)
+        paragraph.setAttribute('class', 'bg-red')
+
+        // manipulasi style
+        const li = document.querySelectorAll('li')
+        //console.log(li)
+        li[1].style.color = 'white'
+        li[1].style.background = 'blue'
+        li[1].style.fontSize = '35px'
+    </script>
+</body>
+</html>
